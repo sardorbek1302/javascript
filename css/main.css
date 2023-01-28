@@ -1,0 +1,91 @@
+*::before,
+::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-image: url("../img/pizza.jpg");
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titel{
+  color: white;
+  font-size: 50px;
+  font-weight: 10px;
+}
+.inner__titel{
+  color: orange;
+}
+.label-input{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.inner{
+  display: flex;
+  align-items: center;
+
+}
+#list{
+  margin-left: 10px;
+}
+.content{
+  display: flex;
+  align-items: center;
+}
+.content__info{
+  margin-left: 15px;
+}
+.content__info button{
+  margin-right: 5px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.content h3{
+  color: white;
+}
+.pizza-description{
+  color: #fff;
+}
+
+.pizza div{
+  display: flex;
+  
+}
+.pizza label{
+  color: white;
+}
+.pizza-two label{
+   color: white;
+}
+.info{
+  display: flex;
+  gap: 15px;
+}
+.btn{
+  margin-top: 10px;
+  margin-left: 25px;
+  background: blueviolet;
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+
+}
+.user{
+  display: flex;
+  flex-direction: column;
+}
+.newadd{
+  display: flex;
+  flex-direction: column;
+}
+hr{
+  border: 1px solid black;
+}
