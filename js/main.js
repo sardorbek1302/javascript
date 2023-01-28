@@ -27,6 +27,13 @@ elForm.addEventListener("submit", function (evt) {
   }
   let pizzaSizeInSm = pizzaSize.value;
 
+   let pizza = "";
+   for (i = 0; i < arrey.length;i++){
+    pizza = arrey[i];
+   }
+   let pizzainfo = pizza.value;
+
+
   const Cards = {
     id: Arr[Arr.length - 1]?.id + 1 || 0,
     task: elInputVal,
@@ -34,6 +41,7 @@ elForm.addEventListener("submit", function (evt) {
     Adres: lebel3,
     thicknes: selectedList,
     pZ: pizzaSizeInSm,
+    tomoto:pizzainfo,
     isCompleted: false,
     isSubmit: false,
   };
@@ -60,7 +68,7 @@ function RenderOrder() {
        <div class="newadd">
         <strong> Dough thickeness:${Arr[i].thicknes}</strong>
         <strong>Size:${Arr[i].pZ}</strong>
-        <strong>On pizza:</strong>
+        <strong>On pizza:${Arr[i].tomoto}</strong>
         <strong>Add:</strong>
        </div>
     <hr>
